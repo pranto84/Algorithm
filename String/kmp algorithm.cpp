@@ -1,5 +1,4 @@
 // prefix search array 
-
 #include <iostream>
 #include <algorithm>
 #include <vector>
