@@ -41,10 +41,10 @@ int marge_sort(int ara[],int l, int r)
     }
 
 }
-void printArray(int A[], int size)
+void printArray(int A[], int Size)
 {
     int i;
-    for (i=0; i < size; i++)
+    for (i=0; i < Size; i++)
         printf("%d ", A[i]);
     printf("\n");
 }
@@ -58,6 +58,5 @@ int main()
     }
     marge_sort(ara, 0, n-1);
     printArray(ara, n);
-    n = sizeof(ara)/sizeof(ara[0]);
 
 }
