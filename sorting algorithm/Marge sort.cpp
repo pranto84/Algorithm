@@ -25,9 +25,8 @@ int marge(int ara[], int l, int m, int r){
         else
             ara[k++] = R[j++];
     }
-    while(i<n1){
+    while(i<n1)
         ara[k++] = L[i++];
-    }
     while(j<n2)
         ara[k++] = R[j++];
 }
@@ -39,7 +38,6 @@ int marge_sort(int ara[],int l, int r)
         marge_sort(ara, m+1, r);
         marge(ara, l, m, r);
     }
-
 }
 void printArray(int A[], int Size)
 {
@@ -53,10 +51,9 @@ int main()
     int n;
     cin >> n;
     int ara[n+5];
-    for(int i=0; i<n; i++){
+    for(int i=0; i<n; i++)
         cin >> ara[i];
-    }
     marge_sort(ara, 0, n-1);
     printArray(ara, n);
-
+    return 0;
 }
