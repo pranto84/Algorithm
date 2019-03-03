@@ -1,9 +1,10 @@
 #include<iostream>
 using namespace std;
+
 void buble_sort(int arra[], int a, int b){
     for(int i=a; i<b; i++){
         for(int j=a; j<b-i; j++){
-            if(arra[j] > arra[j+1])         // use if(arra[j] < arra[j+1]) for decreasing order;
+            if(arra[j] > arra[j+1])         // if(arra[j] < arra[j+1])  [for decreasing order]
                 swap(arra[j], arra[j+1]);
         }
     }
@@ -14,8 +15,7 @@ void printArray(int A[], int n){
     }
     cout << endl;
 }
-int main()
-{
+int main(){
     int arra[1000];
     int n;
     cout << "Enter the size of array:\n";
